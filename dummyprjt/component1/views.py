@@ -17,10 +17,15 @@ def Link(request,*args, **kwargs):
         print(request)
         print(args)
         print(kwargs)
+        print(request.user)
         return HttpResponse("<h1> Link </h1>")
 
+def fn_without_req(*args, **kwargs):
+        return HttpResponse("<p> MHeeee </p>")
 
 
+def another(request):
+        return render(request, "abc.html", {})
 
 # Create your views here.
 

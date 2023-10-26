@@ -24,4 +24,6 @@ urlpatterns = [
    # path('home/', views.Home, name = 'apath1'),
     path('about/', views.About, name = 'apath2'),
     path('link/', views.Link, name = 'apath3'),
+    path('to/', views.fn_without_req, name = 'apth4'),
+    path('areq/', views.another, name = 'path5'),
 ]
