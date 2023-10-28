@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - My Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+{% endblock meta %}
+
+{% block content %}
+
+    <header>
+        <h1>Welcome to My Website</h1>
+
+    </header>
+
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Submit</button>
+</form>
+
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+{% endblock content%}

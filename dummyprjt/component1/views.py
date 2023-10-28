@@ -1,6 +1,18 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import UserForm
+from .models import userData
 
+def create_user(request):
+    if request.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # return redirect('success_page')  # Redirect to a success page
+    else:
+        form = UserForm()
+
+    return render(request, 'create_user.html', {'form': form})
 
 
 

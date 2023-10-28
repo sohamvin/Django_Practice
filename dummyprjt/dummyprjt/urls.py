@@ -30,4 +30,5 @@ urlpatterns = [
     path('about/', views.about, name = 'path6'),
     path('services/', views.services, name = 'path7'),
     path('contacts/', views.contacts, name = 'path8'),
+    path('form/', views.create_user, name = 'path9'),
 ]
