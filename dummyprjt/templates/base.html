@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- this format will be used by all.and the contenet inside the blocks will be replaced by-->
+<!--    whatever is in the respective html files-->
+    <title>The base page from which we start</title>
+
+    {%  block metas   %}
+<!--    block is kind of data type/ tag. contenet is name of the block
+    this makes sense when you are using an element which is common for all pages of ur website.
+    like a navbar.
+    you are importing this page to the other pages and replacing this block with the
+    blocks on the other pages. and when you use
+
+    -->
+
+    {%  endblock metas %}
+
+</head>
+
+<body>
+
+{% include "nav.html" %}
+
+{% block content %}
+replace this with body of yo page.
+{% endblock content %}
+</body>
+
+
+</html>

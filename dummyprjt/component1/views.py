@@ -27,5 +27,23 @@ def fn_without_req(*args, **kwargs):
 def another(request):
         return render(request, "abc.html", {})
 
+def home(request):
+        my_dict = {
+                "1st_key": "WABALABA DUBDUBBBB!!!!!!",
+                "2nd_one": "Family ties, Kendric lamar.",
+                "3rd": "<h1> a header </h1>",
+
+        }
+        return render(request, "abc.html", my_dict)
+
+def about(request):
+        return render(request, "about.html", {})
+
+def contacts(request):
+        return render(request, "contacts.html", {})
+
+def services(request):
+        return render(request, "services.html", {})
+
 # Create your views here.
 
