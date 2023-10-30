@@ -14,6 +14,9 @@ def create_user(request):
 
     return render(request, 'create_user.html', {'form': form})
 
+# def redirection(request):
+
+
 
 
 
