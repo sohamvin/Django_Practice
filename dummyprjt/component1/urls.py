@@ -20,8 +20,7 @@ from component1 import views
 from django.urls import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('component1.urls')),
+
     path('', views.Home, name = 'home'),
    # path('home/', views.Home, name = 'apath1'),
     path('About/', views.About, name = 'apath2'),

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block metas %}
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data producing</title>
+{% endblock %}
+
+{% block content %}
+<div>
+    <ul>
+    {% for ti in titles %}
+        <li> {{ti}} </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}

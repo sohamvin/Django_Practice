@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 
 <html>
+{% load static %}
+
 <head>
 <!-- this format will be used by all.and the contenet inside the blocks will be replaced by-->
 <!--    whatever is in the respective html files-->
     <title>The base page from which we start</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
 
     {%  block metas   %}
 <!--    block is kind of data type/ tag. contenet is name of the block

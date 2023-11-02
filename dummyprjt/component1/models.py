@@ -23,11 +23,11 @@ class userData(models.Model):
     email = models.CharField(max_length=130)
     name = models.CharField(max_length=130)
     password = models.CharField(max_length=130)
+    confirm = models.CharField(max_length=130, default= True)
 
-    def __str__(self):
-        global count  # Add this line to indicate you're using the global count variable
-        count += 1
-        return "userobj" + str(count)
+
+
+
 
 
 count = 0  # Initialize count variable outside the class
